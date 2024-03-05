@@ -1,0 +1,710 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.custom-navbar {
+    background-color: #000000 !important; /* Black fallback color */
+    background-color: rgba(0, 0, 0, 1) !important; /* Less dark semi-transparent black */
+    z-index: 5;
+    transition: top 1.5s ease-in-out;
+}
+@media (min-width: 768px) {
+    .custom-navbar {
+        position: sticky;
+        top: 0;
+    }
+}
+
+#background-section, #page1, #page2, #page3 {
+    /* The image used */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#background-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url('images/BG.jpg');
+}
+#page2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+}
+#page3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7)), url('images/BG2.jpg');
+}
+
+@media (max-width: 1024px) {
+    #background-section, #page2 {
+        /* Remove the parallax effect on small screens */
+        background-attachment: scroll;
+    }
+}
+
+
+
+#quote {
+    font-weight: 400;
+    line-height: 1;
+}
+@media (min-width: 768px) {
+    #quote {
+        font-size: 5rem; /* Larger font size for larger screens */
+    }
+}
+
+#quote-author {
+    text-align: center; 
+    padding-left: 36%; 
+    padding-top: 1%; 
+    font-weight: 100;
+}
+@media (min-width: 768px) {
+    #quote-author {
+        font-size: large; /* Larger font size for larger screens */
+    }
+}
+#opening-intro {
+    font-weight: 300;
+    padding-top:5%;
+}
+@media (min-width: 768px) {
+    #opening-intro {
+        font-size: x-large; /* Larger font size for larger screens */
+    }
+}
+
+/*page 1*/
+.features {
+    position: relative;
+    width: 100%;
+}
+  
+.features::after {
+content: "";
+position: absolute;
+bottom: -10px;
+left: 0;
+width: 70%;
+background: linear-gradient(to right, red, blue);
+border-width: 3px;
+border-style: solid;
+border-image: linear-gradient(to right, red , blue) 1;
+}
+
+.rectangle {
+    height: auto;
+    width: 100%; /* Make the width responsive */
+    background-color: #2a2a2a;
+    color: white;
+    padding: 5%;
+    margin-top: 18px;
+    border-top-left-radius: 300px;
+    border-bottom-left-radius: 300px;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 1200px) {
+    .rectangle {
+        margin-top: 20px; /* Add some space between the image and text on smaller screens */
+    }
+}
+
+
+.rectangle h3 {
+    font-weight: 300;
+    padding-left: 40%;
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
+.rectangle p {
+    font-size: medium;
+    padding: 9px;
+    font-weight: lighter;
+    padding-left: 28%;
+    padding-right: 10%;
+    
+    line-height: 1.5;
+}
+.semi-square {
+    margin: 7% 5%;
+    position: relative;
+    height: 29rem;
+    width: 28rem;
+    background-size: 100% 100%; /* Resize the background image to cover the entire container */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    border-radius: 20%;
+    color: white;
+    padding: 20px;
+    z-index: 2;
+}
+
+/*Page 2*/
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    display: block;
+    max-width: 100%;
+    height: 400px !important; /* Adjust this value to change the height */
+}
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6); /* Black background with 60% opacity */
+    left: 0;
+    right: 0;
+}
+
+.carousel-caption h5, .carousel-caption p {
+    color: white; /* White text */
+}
+
+
+
+/*Page 3*/
+.special-programs {
+    position: relative;
+    width: 100%;
+}
+  
+.special-programs::after {
+content: "";
+margin-left: 22px;
+position: absolute;
+bottom: -10px;
+left: 0;
+width: 64%;
+background: linear-gradient(to right, blue, yellow);
+border-width: 3px;
+border-style: solid;
+border-image: linear-gradient(to right, blue, yellow) 1;
+}
+
+.circle {
+    height: 33rem;
+    width: 33rem; /* Make the width responsive */
+    background-color: #2a2a2a;
+    padding: 5%;
+    margin: 0 5rem 0 5 rem;
+    margin-top: 1.4rem;
+    margin-bottom: 18rem;
+    border-radius: 45rem;
+    z-index: 2;
+}
+
+.box {
+    height: 15rem;
+    width: 25.3rem;
+    border-radius: 3rem;
+    margin-top: 25rem;
+    background-color:rgb(95, 87, 74) ;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+.p3 .fitness-training .circle {
+    background-image: url(images/fitness-training.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.p3 .self-defense .circle {
+    background-image: url(images/self-defense.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.p3 .fitness-training .circle .box h3 {
+    padding: 5% 5%;
+    padding-bottom: 0;
+}
+
+.p3 .self-defense .circle .box h3 {
+    padding: 5% 5%;
+    padding-bottom: 0;}
+
+.p3 .fitness-training .circle .box p {
+    padding: 0 6%;
+    padding-bottom: 0;
+    font-size: medium;
+    line-height: 1.75;}
+
+.p3 .self-defense .circle .box p {
+    padding: 0 6%;
+    padding-bottom: 0%;
+    font-size: medium;
+    line-height: 1.75;}
+
+.p3 .fitness-training .circle .box .center-button {
+    padding: 0 36%;
+}
+.p3 .self-defense .circle .box .center-button {
+    padding: 0 36%;    
+}
+
+
+/* training-program.html */
+.training-program {
+    position: relative;
+    width: 100%;
+}
+  
+.training-program::after {
+content: "";
+position: absolute;
+bottom: -10px;
+left: 0;
+width: 70%;
+background: linear-gradient(to right, blue, orange);
+border-width: 3px;
+border-style: solid;
+border-image: linear-gradient(to right, blue, orange) 1;
+}
+
+
+#training-intro .text-box {
+    flex-basis: 20%; /* Initial width */
+    max-height: 40rem; /* Same as the image height */
+    max-width: 35rem;
+    overflow-x: auto; /* Allow horizontal scrolling if the content exceeds the width */
+    margin-top: 10rem;
+    background-image: linear-gradient(rgb(117, 116, 116, 0.95), rgba(38, 38, 244, 0.7));
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+    position: absolute;
+    border-top-right-radius: 8rem;
+    border-bottom-right-radius: 8rem;
+}
+
+#training-intro .img-container {
+    flex-basis: 80%; /* Initial width */
+    height: 40rem;
+    width: 90%; /* Make the width responsive */
+    background-color: #2a2a2a;
+    background-image: url('images/trainingProgram.jpg');
+    background-position: center; 
+    padding-inline: 10%;
+    margin-inline: auto;
+    border-radius: 10rem;
+    z-index: 1;
+}
+
+#training-info .img-container {
+    width: 16rem;
+    height: 16rem;
+    border-radius: 3rem;
+    padding: 1rem;
+}
+#row1 .img-container,
+#row2 .img-container,
+#row3 .img-container {
+    background-size: cover; 
+    background-position: center;
+}
+
+#row1 .img-container {
+    background-image: url(images/classes.jpg);
+}
+
+#row2 .img-container {
+    background-image: url(images/fitness-training.jpg);
+}
+
+#row3 .img-container {
+    background-image: url(images/self-defense.jpg);
+}
+
+.martial-arts-class {
+    position: relative;
+    width: 100%;
+}
+
+.martial-arts-class::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 70%;
+    background: linear-gradient(to right, rgb(137, 171, 227), rgb(252, 246, 245));
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to right, rgb(137, 171, 227), rgb(252, 246, 245)) 1;
+}
+
+.square {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 4rem;
+    align-content: end;
+}
+.shape-container {
+    width: auto;
+    height: auto;
+    min-height: 40rem; /* 43rem */
+    /* background-color: antiquewhite; */
+    position: relative;
+}
+
+.vertical-rectangle {
+    width: 26rem;
+    height: 36rem;
+    margin-inline-start: 6rem;
+    margin-top: 3rem;
+    border-radius: 5px;
+    border-start-end-radius: 2rem;
+    /* background-color: darkslateblue; */
+}
+.circle1 {
+    width: 29rem;
+    height: 29rem;
+    border-radius: 30rem;
+}
+.vertical-rectangle .text-box {
+    margin-top: 28.5rem;
+    margin-inline-start: 3rem;
+    width: 20rem;
+    height: 5rem;
+    padding: 0.5rem 1rem;
+    border-end-end-radius: 1rem;
+    border-start-start-radius: 1rem;
+    background-color: #80a0ab;
+    color: white;
+    z-index: 5;
+    position: relative;
+}
+#grid1 .circle1,
+#grid2 .circle1,
+#grid3 .circle1,
+#grid4, .circle1 {
+    background-size: cover; 
+    background-position: center;
+}
+#grid1 .circle1 {
+    background-image: url(images/jiu-jitsu.jpg);
+}
+#grid2 .circle1 {
+    background-image: url(images/judo.jpg);
+}
+
+#grid3 .circle1 {
+    background-image: url(images/karate.jpg);
+}
+#grid4 .circle1 {
+    background-image: url(images/muay-thai.jpg);
+}
+
+
+.membership {
+    position: relative;
+    width: 100%;
+}
+  
+.membership::after {
+content: "";
+position: absolute;
+bottom: -10px;
+left: 0;
+width: 70%;
+background: linear-gradient(to right, yellow, rgb(255, 0, 255));
+border-width: 3px;
+border-style: solid;
+border-image: linear-gradient(to right, yellow, rgb(255, 0, 255)) 1;
+}
+.membership-items {
+    border: 5;
+    border-color: blanchedalmond;
+}
+.membership-items .m-items {
+    width: 22rem;
+    height: 8rem;
+    background-color: rgba(153, 102, 102, 0.7);
+}
+.membership-items .m-items .plan {
+    position: relative;
+}
+
+.membership-items .m-items .plan::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 16rem;
+    background: linear-gradient(to right, blanchedalmond);
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to right, blanchedalmond) 1;
+}
+.special {
+    position: relative;
+    width: 100%;
+}
+  
+.special::after {
+content: "";
+position: absolute;
+bottom: -10px;
+left: 0;
+width: 64%;
+background: linear-gradient(to right, rgb(255, 255, 150), rgb(249, 185, 249));
+border-width: 2px;
+border-style: solid;
+border-image: linear-gradient(to right, rgb(255, 255, 150), rgb(254, 180, 254)) 1;
+}
+
+/* schedule.html */
+.schedule {
+    position: relative;
+    width: 100%;
+}
+  
+.schedule::after {
+content: "";
+position: absolute;
+bottom: -10px;
+left: 0;
+width: 64%;
+background: linear-gradient(to right, rgb(255, 255, 255), rgb(0, 0, 0));
+border-width: 2px;
+border-style: solid;
+border-image: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 255, 255)) 1;
+}
+.table {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.table th, .table td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 15px;
+}
+.table th {
+    background-color: #161616;
+    color: antiquewhite;
+}
+.table tbody tr:nth-child(odd) td {
+    background-color: #3c3c3c; /* Dark Gray */
+    color: #f2f2f2; /* Snow */
+}
+.table tbody tr:nth-child(even) td {
+    background-color: #2b2b2b; /* Jet */
+    color: #f2f2f2; /* Snow */
+}
+
+th:not(:first-child) {
+    width: 12.5%;
+}
+.table tbody tr td:hover {
+    background-color: #5a5a5a; /* Darker gray when hovered */
+    color: #ffffff; /* White text when hovered */
+}
+
+/* instructors.html */
+.instructors {
+    position: relative;
+    width: 100%;
+}
+  
+.instructors::after {
+content: "";
+position: absolute;
+bottom: -10px;
+left: 0;
+width: 64%;
+background: linear-gradient(to right, #D6ED17FF, #606060FF);
+border-width: 2px;
+border-style: solid;
+border-image: linear-gradient(to right, #D6ED17FF, #606060FF) 1;
+}
+.back-rectangle {
+    width: 50rem;
+    height: 18rem;
+    border-top-right-radius: 10rem;
+    border-top-left-radius: 10rem;
+    top: 20rem;
+    background-color: azure;
+    z-index: 0;
+    position: absolute;
+}
+
+.circle-img {
+    height: 22rem;
+    width: 22rem;
+    min-height: 5rem;
+    min-width: 5rem;
+    border-radius: 30rem;
+    margin-bottom: 14rem;
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    z-index: 2;
+    position: relative;
+}
+
+.back-rectangle h4,
+.back-rectangle h5,
+.back-rectangle li {
+    color: #2a2a2a;
+}
+
+/* Center text */
+.text-box {
+    margin-top: 3.5rem;
+    z-index: 3;
+}
+
+/* Style the divider */
+hr {
+    margin: 2px auto; /* 'auto' centers the divider */
+    width: 80%;
+    border-top: 2px solid darkolivegreen;
+}
+#i-1 .circle-img, #i-2 .circle-img, #i-3 .circle-img, #i-4 .circle-img, #i-5 .circle-img, #i-6 .circle-img {
+    background-size: cover; 
+    background-position: center;
+}
+#i-1 .circle-img {
+    background-image: url(images/mauricio-gomez.jpg);
+}
+#i-2 .circle-img {
+    background-image: url(images/sarah-nova.jpg);
+}
+#i-3 .circle-img {
+    background-image: url(images/guy-victory.jpg);
+}
+#i-4 .circle-img {
+    background-image: url(images/morris-davis.jpg);
+}
+#i-5 .circle-img {
+    background-image: url(images/traci-santiago.jpg);
+}
+#i-6 .circle-img {
+    background-image: url(images/harpreet-kaur.jpg);
+}
+
+
+
+/* about.html */
+.about {
+    position: relative;
+    width: 100%;
+}
+  
+.about::after {
+content: "";
+position: absolute;
+bottom: -10px;
+left: 0;
+width: 64%;
+background: linear-gradient(to right, rgb(49, 67, 169), #FAEBEFFF);
+border-width: 2px;
+border-style: solid;
+border-image: linear-gradient(to right, rgb(49, 67, 169), #FAEBEFFF) 1;
+}
+.semi-circle {
+    width: 23rem;
+    height: 22rem;
+    border-radius: 7rem;
+    margin-top: 24rem;
+    /* background-color: cadetblue; */
+    background-image: url(images/DuBo\ gym.jpg);
+    background-size: cover; 
+    background-position: center;
+    position: absolute;
+    z-index: 1;
+}
+.note1 {
+    margin-top: 3%;
+    margin-inline-end: 40rem;
+    border-start-start-radius: 8rem;
+    border-start-end-radius: 8rem;
+    padding: 2% 4%;
+    background-color: #5a5a5a;
+    position: relative;
+}
+.note2 {
+    margin-top: 2%;
+    margin-inline-end: 40rem;
+    padding: 2% 4%;
+    background-color: #5a5a5a;
+    position: relative;
+}
+.note3 {
+    margin-top: 6%;
+    margin-inline-start: 40rem;
+    border-end-start-radius: 8rem;
+    border-end-end-radius: 8rem;
+    padding: 2% 4%;
+    background-color: #5a5a5a;
+    position: relative;
+}
+.semi-circle2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.note1, .note2, .note3 {
+    width: 22rem; /* Adjust this value as needed */
+    height: 5rem;
+    
+}
+
+@media screen and (max-width: 900px) {
+    .note1, .note2, .note3 {
+        width: 100%; /* Adjust this value as needed */
+        margin: 0 auto;
+        width: 22rem; /* Adjust this value as needed */
+        height: 7rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 2rem;
+        background-color: rgba(51, 61, 121, 0.5);
+        z-index: 2;
+    }
+    .note1 {
+        margin-top: 1.5rem;
+    }
+}
+
+.location {
+    position: relative;
+    width: 100%;
+}
+  
+.location::after {
+content: "";
+position: absolute;
+bottom: -10px;
+left: 0;
+width: 64%;
+background: linear-gradient(to right, #FFD662FF,#00539CFF);
+border-width: 2px;
+border-style: solid;
+border-image: linear-gradient(to right, #FFD662FF, #00539CFF) 1;
+}
+.card {
+    background-color: #fdfd96; /* This is a light yellow color similar to a yellow pad paper */
+}
+
+
+.facilities {
+    position: relative;
+    width: 100%;
+}
+  
+.facilities::after {
+content: "";
+position: absolute;
+bottom: -10px;
+left: 0;
+width: 64%;
+background: linear-gradient(to right, #422057FF,#FCF951FF);
+border-width: 2px;
+border-style: solid;
+border-image: linear-gradient(to right, #422057FF, #FCF951FF) 1;
+}
+.carousel-item img {
+    height: 40rem; /* Adjust this value as needed */
+    object-fit: cover;
+}

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/DMA_logo-stacked.ico">
+    <link rel="stylesheet" href="style.css">    
+    <title>DoBu|Schedule</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body navbar-dark custom-navbar sticky-top" data-bs-theme="dark">
+        <div class="container">
+            <a href="home.html" class="navbar-brand"><img class="logo" src="images/logo.png" alt="DuBo Martial Arts"></a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="home.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="training-program.html" class="nav-link">Training Program</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="schedule.html" class="nav-link">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="instructors.html" class="nav-link">Instructors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="media-links d-none d-xl-block ms-5 pt-3">
+                <ul class="navbar-icons list-unstyled d-flex justify-content-center">
+                    <li class="icons-list">
+                        <a href="https://www.facebook.com/" class="icon-link" aria-label="Facebook">
+                            <img src="images/fb-icon.png" alt="Facebook" width="30" height="30" style="margin-right: 15px;">
+                        </a>
+                    </li>
+                    <li class="icons-list">
+                        <a href="https://www.instagram.com/" class="icon-link" aria-label="Instagram">
+                            <img src="images/insta-icon.png" alt="Instagram" width="30" height="30" style="margin-right: 15px;">
+                        </a>
+                    </li>
+                    <li class="icons-list">
+                        <a href="https://www.youtube.com/" class="icon-link" aria-label="Youtube">
+                            <img src="images/yt-icon.png" alt="Youtube" width="" height="30">
+                        </a>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+        <div id="myProgress">
+            <div id="myBar"></div>
+        </div>
+    </nav>
+    
+    <section class="bg-black text-light p-5 pt-1">
+        <div class="container">
+            <div class="schedule">
+                <h1 class="display-6 text-light">Schedule</h1>
+            </div>
+            <div class="container p-3">
+                <div class="table-responsive p-2 border border-3 border-dark rounded-2">
+                    <table class="table table-hover">
+                        <thead class="">
+                            <tr>
+                                <th scope="col">Time</th>
+                                <th scope="col">Monday</th>
+                                <th scope="col">Tuesday</th>
+                                <th scope="col">Wednesday</th>
+                                <th scope="col">Thursday</th>
+                                <th scope="col">Friday</th>
+                                <th scope="col">Saturday</th>
+                                <th scope="col">Sunday</th>
+                            </tr>
+                        </thead>
+                        <tbody class="">
+                            <tr>
+                                <th scope="row">06:00-07:30</th>
+                                <td>Jiu-jitsu</td>
+                                <td>Karate</td>
+                                <td>Judo</td>
+                                <td>Jiu-jitsu</td>
+                                <td>Muay Thai</td>
+                                <td>--</td>
+                                <td>--</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">08:00-10:00</th>
+                                <td>Muay Thai</td>
+                                <td>Private Tutorial</td>
+                                <td>Private Tutorial</td>
+                                <td>Private Tutorial</td>
+                                <td>Jiu-jitsu</td>
+                                <td>Private Tutorial</td>
+                                <td>Private Tutorial</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">10:30-12:00</th>
+                                <td>Private Tutorial</td>
+                                <td>Private Tutorial</td>
+                                <td>Private Tutorial</td>
+                                <td>Private Tutorial</td>
+                                <td>Private Tutorial</td>
+                                <td>Judo</td>
+                                <td>Karate</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">13:00-14:30</th>
+                                <td>Open mat/ Personal practice</td>
+                                <td>Open mat/ Personal practice</td>
+                                <td>Open mat/ Personal practice</td>
+                                <td>Open mat/ Personal practice</td>
+                                <td>Open mat/ Personal practice</td>
+                                <td>Karate</td>
+                                <td>Judo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">15:00-17:00</th>
+                                <td>Jiu-jitsu (Kids)</td>
+                                <td>Judo (Kids)</td>
+                                <td>Karate (Kids)</td>
+                                <td>Jiu-jitsu (Kids)</td>
+                                <td>Judo (Kids)</td>
+                                <td>Muay Thai</td>
+                                <td>Jiu-jitsu</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">17:30-19:00</th>
+                                <td>Karate</td>
+                                <td>Muay Thai</td>
+                                <td>Judo</td>
+                                <td>Jiu-jitsu</td>
+                                <td>Muay Thai</td>
+                                <td>--</td>
+                                <td>--</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">19:00-21:00</th>
+                                <td>Jiu-jitsu</td>
+                                <td>Judo</td>
+                                <td>Jiu-jitsu</td>
+                                <td>Karate</td>
+                                <td>Private Tutorial</td>
+                                <td>--</td>
+                                <td>--</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start align-items-start">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <div class="logo-container">
+                        <img class="img-fluid w-80 mx-auto py-4" src="images/Brand.png" alt="logo">
+                    </div>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Navigation</h5>
+                    <p>
+                        <a href="home.html" class="text-white" style="text-decoration: none;"> Home</a>
+                    </p>
+                    <p>
+                        <a href="training-program.html" class="text-white" style="text-decoration: none;"> Training Program</a>
+                    </p>
+                    <p>
+                        <a href="schedule.html" class="nav-link">Schedule</a>
+                    </p>
+                    <p>
+                        <a href="instructors.html" class="nav-link">Instructors</a>
+                    </p>
+                    <p class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact us</h5>
+                    <div class="px-1">
+                        <p>
+                            <a href="https://www.facebook.com/" class="text-white" style="text-decoration: none;"><img src="images/fb-icon.png" alt="" class="img-fluid px-2"> Facebook</a>
+                        </p>
+                        <p>
+                            <a href="https://www.instagram.com/" class="text-white" style="text-decoration: none;"><img src="images/insta-icon.png" alt="" class="img-fluid px-2"> Instagram</a>
+                        </p>
+                        <p>
+                            <a href="https://www.youtube.com/" class="text-white" style="text-decoration: none;"><img src="images/yt-icon.png" alt="" class="img-fluid" style="margin-right: 1px;"> Youtube</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Creative Divider -->
+            <hr class="divider" />
+        </div>
+    </footer>    
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>

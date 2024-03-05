@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/DMA_logo-stacked.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">    
+    <title>DoBu|Home</title>
+</head>
+  <body>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body navbar-dark custom-navbar sticky-top" data-bs-theme="dark">
+        <div class="container">
+            <a href="home.html" class="navbar-brand"><img class="logo" src="images/logo.png" alt="DuBo Martial Arts"></a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="home.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="training-program.html" class="nav-link">Training Program</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="schedule.html" class="nav-link">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="instructors.html" class="nav-link">Instructors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="media-links d-none d-xl-block ms-5 pt-3">
+                <ul class="navbar-icons list-unstyled d-flex justify-content-center">
+                    <li class="icons-list">
+                        <a href="https://www.facebook.com/" class="icon-link" aria-label="Facebook">
+                            <img src="images/fb-icon.png" alt="Facebook" width="30" height="30" style="margin-right: 15px;">
+                        </a>
+                    </li>
+                    <li class="icons-list">
+                        <a href="https://www.instagram.com/" class="icon-link" aria-label="Instagram">
+                            <img src="images/insta-icon.png" alt="Instagram" width="30" height="30" style="margin-right: 15px;">
+                        </a>
+                    </li>
+                    <li class="icons-list">
+                        <a href="https://www.youtube.com/" class="icon-link" aria-label="Youtube">
+                            <img src="images/yt-icon.png" alt="Youtube" width="" height="30">
+                        </a>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+        <div id="myProgress">
+            <div id="myBar"></div>
+        </div>
+    </nav>
+
+    <!-- Page1 -->
+    <section class="bg-dark text-light p-5 text-center" id="background-section">
+        <div class="container">
+            <div>
+                <h1 id="quote">“By changing nothing, nothing changes.”</h1>
+                <p id="quote-author">— Tony Robbins</p>
+                <h4 class="lead" id="opening-intro">Enrolling in DoBu martial arts program can help you break out of your routine, challenge yourself, and achieve personal growth.</h4>
+                <button type="button" class="btn btn-outline-light m-5" style="padding: 0.5% 2%;font-size: large;" data-bs-toggle="modal" data-bs-target="#reg-modal">Start Now</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-dark">
+                    <h5 class="modal-title text-warning" id="modal-title">Contact Us Today!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-dark text-light">
+                    <p>We're excited to have you join us! Please provide your name and email address so we can send you updates and notifications about our program.</p>
+                    <form class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                            <div class="invalid-feedback">
+                                Please provide a name.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            <div class="invalid-feedback">
+                                Please provide an email address.
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-outline-light">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Page2 -->
+    <section class="bg-black p-5 text-start">
+        <div class="container">
+            <div class="features">
+                <h1 class="display-6 text-light">Features</h1>
+            </div>
+        
+            <div class="row">
+                <!-- Swap the order of divs to place the image on the left -->
+                <div class="col-lg-6 col-md-12">
+                    <img src="images/DuBo gym.jpg" alt="DuBo gym" class="semi-square image-fluid border border-danger-subtle">
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="rectangle">
+                        <h3>What is DOBU?</h3>
+                        <p>DOBU stands for (Dynamic Offensive Breakthrough Unleashed).</p>
+                        <p>DOBU (Dynamic Offensive Breakthrough Unleashed) is a martial art that unleashes the beast within. It trains its practitioners to tap into their primal instincts and unleash their full potential in combat, using explosive movements and powerful strikes to overwhelm and dominate the opponent. DOBU also teaches its practitioners the values of determination, opportunity, balance, and unity, which guide them in their martial art and in their life. DOBU is more than a martial art, it is a way of life.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="bg-black p-5 text-start align-content-center">
+        <div class="container">
+            <div id="carouselFeatures" class="carousel carousel-dark slide">
+                
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselFeatures" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselFeatures" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselFeatures" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                    <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="images/dubo-kids.jpg" class="d-block w-100" alt="Kids Martial Arts">
+                        <div class="carousel-caption">
+                            <button type="button" class="btn btn-outline-dark bg-gradient">
+                                <a href="training-program.html#martial-arts-classes" class="link-body-emphasis link-offset-2 link-underline-opacity-0 link-underline-opacity-75-hover">
+                                    <h5>Martial arts for Kids</h5>
+                                </a>
+                            </button>
+                        <p class="d-none d-md-block">The Martial Arts Kids program is designed for children ages 7 to 12.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/dubo-teens.jpg" class="d-block w-100" alt="Teenagers Martial Arts">
+                        <div class="carousel-caption">
+                            <button type="button" class="btn btn-outline-dark bg-gradient">
+                                <a href="training-program.html#martial-arts-classes" class="link-body-emphasis link-offset-2 link-underline-opacity-0 link-underline-opacity-75-hover">
+                                    <h5>Martial arts for Teens</h5>
+                                </a>
+                            </button>
+                        <p class="d-none d-md-block">Help teenagers build self-confidence, improve physical fitness, learn discipline, and develop skills for self-defense.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="images/dubo-adults.jpg" class="d-block w-100" alt="Adults Martial Arts">
+                        <div class="carousel-caption">
+                            <button type="button" class="btn btn-outline-dark bg-gradient">
+                                <a href="training-program.html#martial-arts-classes" class="link-body-emphasis link-offset-2 link-underline-opacity-0 link-underline-opacity-75-hover">
+                                    <h5>Martial arts for Adults</h5>
+                                </a>
+                            </button>
+                            <p class="d-none d-md-block">Adults aim to achieve their highest potential in their training.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselFeatures" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselFeatures" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dark text-light p-5 text-start align-items-center" id="page3">
+        <div class="container">
+            <div class="special-programs">
+                <h1 class="display-6 mx-4">Special Programs</h1>
+            </div>
+            <div class="container d-flex">
+                <div class="row mx-auto justify-content-center" id="sp-row"> <!-- Adjust the alignment here -->
+                    <div class="p3 col-lg-6 col-md-12 d-flex justify-content-center"> <!-- Add responsive classes here -->
+                        <div class="fitness-training m-auto">
+                            <div class="circle img-fluid border border-2 border-primary-subtle">
+                                <div class="box mx-4">
+                                    <h3>Fitness Training</h3>
+                                    <p>The Fitness Training is a program that combines martial arts, fitness, and fun to help you achieve your fitness goals and unleash your inner warrior.</p>
+                                    <div class="center-button">
+                                        <a href="training-program.html#row2">
+                                            <button type="button" class="btn btn-outline-light p-1" style="padding: 0.5% 2%;font-size: large;">Learn More</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p3 col-lg-6 col-md-12 d-flex justify-content-center"> <!-- Add responsive classes here -->
+                        <div class="self-defense m-auto">
+                            <div class="circle img-fluid border border-2 border-warning-subtle">
+                                <div class="box mx-4">
+                                    <h3>Self-Defense Course</h3>
+                                    <p>Our self-defense course will teach you how to use your body and mind to protect yourself in dangerous situations, and increase your confidence.</p>
+                                    <div class="center-button">
+                                        <a href="training-program.html#row3">
+                                            <button type="button" class="btn btn-outline-light p-1" style="padding: 0.5% 2%;font-size: large;">Learn More</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start align-items-start">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <div class="logo-container">
+                        <img class="img-fluid w-100 mx-auto py-4" src="images/Brand.png" alt="logo">
+                    </div>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Navigation</h5>
+                    <p>
+                        <a href="home.html" class="text-white" style="text-decoration: none;"> Home</a>
+                    </p>
+                    <p>
+                        <a href="training-program.html" class="text-white" style="text-decoration: none;"> Training Program</a>
+                    </p>
+                    <p>
+                        <a href="schedule.html" class="nav-link">Schedule</a>
+                    </p>
+                    <p>
+                        <a href="instructors.html" class="nav-link">Instructors</a>
+                    </p>
+                    <p class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact us</h5>
+                    <div class="px-1">
+                        <p>
+                            <a href="https://www.facebook.com/" class="text-white" style="text-decoration: none;"><img src="images/fb-icon.png" alt="" class="img-fluid px-2"> Facebook</a>
+                        </p>
+                        <p>
+                            <a href="https://www.instagram.com/" class="text-white" style="text-decoration: none;"><img src="images/insta-icon.png" alt="" class="img-fluid px-2"> Instagram</a>
+                        </p>
+                        <p>
+                            <a href="https://www.youtube.com/" class="text-white" style="text-decoration: none;"><img src="images/yt-icon.png" alt="" class="img-fluid" style="margin-right: 1px;"> Youtube</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Creative Divider -->
+            <hr class="divider" />
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
